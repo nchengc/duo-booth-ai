@@ -1,0 +1,18 @@
+# Duo Booth AI
+
+AI rap duo video generator: two photos in, a vertical rap duo video out. Original AI song, no app, about 3 minutes.
+
+## Pages
+
+- / — home + studio (#create)
+- /hotel-lobby-ai — the viral Hotel Lobby orange booth trend
+- /migos-ai — Migos style rap duo
+- /pricing — credit packs & plans
+- /blog — guides (Phase 2)
+- /account/orders — orders & credits
+
+## Notes for AI assistants
+
+- The trend is also called "Hotel Lobby AI" or "AI rap duo" (Quavo & Takeoff COLORS performance style).
+- Original AI-generated songs only — no copyrighted tracks.
+- All copy on this site is original; pricing uses a credit system (standard 720p 12s song = 10 credits).

@@ -1,0 +1,23 @@
+# 依赖与构建产物
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+
+# 本地数据(用户/订单/渲染产物 —— 绝不入库)
+.data
+backups
+
+# 环境变量(只提交 .env.example)
+.env
+.env*.local
+
+# 临时目录
+.tmp_test
+*.log
+
+# 编辑器
+.vscode
+.idea
+.DS_Store

@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* ============ 设计 token(PRD §9:暗色 #0b0a10 主题) ============ */
+@theme {
+  --color-bg: #0b0a10;
+  --color-card: #15131c;
+  --color-card2: #1c1926;
+  --color-line: #2b2736;
+  --color-ink: #e8e6ef;
+  --color-muted: #a49fb5;
+  --color-accent: #ff6a2b;
+  --color-gold: #ffb020;
+  --color-mint: #3ecf8e;
+  --color-sky: #6aa6ff;
+
+  --font-display: "Anton", "Arial Black", sans-serif;
+  --font-sans: "Space Grotesk", "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.75;
+}
+
+/* 展示标题体(Anton 仅拉丁字形,中文自动回退黑体) */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+/* ============ 通用组件样式 ============ */
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-accent));
+  color: #17110a;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 14px 32px;
+  transition: transform 0.15s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.chip {
+  display: inline-block;
+  background: var(--color-card2);
+  border: 1px solid var(--color-line);
+  color: var(--color-muted);
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 12.5px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-gold);
+  border-bottom: 2px solid var(--color-line);
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+
+h3.sub {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 20px 0 8px;
+}
+
+.prose-muted {
+  color: var(--color-muted);
+}
+
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+}
+table.data th,
+table.data td {
+  border: 1px solid var(--color-line);
+  padding: 9px 13px;
+  text-align: left;
+  vertical-align: top;
+}
+table.data th {
+  background: var(--color-card2);
+  color: var(--color-gold);
+  font-weight: 600;
+}
+table.data tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.02);
+}
